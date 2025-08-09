@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Raizes Da Nação 💞</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="Fotos pra projeto/favicon-16x16.png">
+    <style>
+      body {
+        background: linear-gradient(135deg, #ff6ec4, #7873f5);
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+      }
+      .background-hearts::before {
+        content: "💖 💞 💓 💗 💘 💝 💕 ";
+        font-size: 2rem;
+        opacity: 0.1;
+        white-space: nowrap;
+        animation: slide 25s linear infinite;
+        position: fixed;
+        top: 0;
+        left: -50%;
+        width: 200%;
+        pointer-events: none;
+      }
+      @keyframes slide {
+        from { transform: translateX(0); }
+        to { transform: translateX(-50%); }
+      }
+      .footer-heart {
+        position: absolute;
+        bottom: 0;
+        width: 20px;
+        height: 20px;
+        background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Heart_coraz%C3%B3n.svg/1024px-Heart_coraz%C3%B3n.svg.png') no-repeat center/contain;
+        animation: rise 5s infinite linear;
+        opacity: 0.8;
+      }
+      @keyframes rise {
+        0% { transform: translateY(0) scale(1); opacity: 0.8; }
+        50% { transform: translateY(-150px) scale(1.2); opacity: 1; }
+        100% { transform: translateY(0) scale(1); opacity: 0.8; }
+      }
+      .animate-fadeIn {
+        animation: fadeIn 1s ease-in-out both;
+      }
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+    </style>
+  </head>
+  <body class="relative text-white background-hearts">
+
+    <!-- Música de fundo -->
+    <audio autoplay loop hidden>
+      <source src="musica.mp3" type="audio/mpeg">
+      Seu navegador não suporta áudio embutido.
+    </audio>
+
+    <!-- Timer -->
+    <div class="fixed top-4 right-4 bg-white/80 text-pink-700 backdrop-blur-lg px-4 py-3 rounded-xl shadow-xl z-40 text-center w-64 font-bold">
+      <div id="timer" class="text-base"></div>
+    </div>
+
+    <header class="text-center py-10 animate-fadeIn">
+      <h1 class="text-4xl sm:text-5xl font-extrabold text-white drop-shadow-lg animate-bounce">Junina Raízes Da Nação 💞</h1>
+      <p class="mt-3 text-lg sm:text-xl text-pink-200 animate-fadeIn">Uma despedida cheia de amor e boas memórias</p>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pb-10">
+      <!-- FOTO + TEXTO -->
+      <div class="bg-white/90 text-gray-800 rounded-xl overflow-hidden shadow-xl animate-fadeIn">
+        <div class="aspect-w-1 aspect-h-1">
+          <img src="Fotos pra projeto/foto_em_grupo.jpg" alt="Foto do grupo" class="object-cover w-full h-full" />
+        </div>
+        <p class="p-3 text-center text-sm">Obrigado a cada um de vocês!!</p>
+      </div>
+
+      <div class="bg-white/90 text-gray-800 rounded-xl overflow-hidden shadow-xl animate-fadeIn">
+        <div class="aspect-w-1 aspect-h-1">
+          <img src="Fotos pra projeto/noivos_igreja.jpg" alt="Noivos" class="object-cover w-full h-full" />
+        </div>
+        <p class="p-3 text-center text-sm">Meu diretor Eduardo meu braço direito o que falar de vc cara , um ser humano incrível sem explicação a você obrigado por tudo e por tanto primeiramente Deus segundo a você a junina está aí firme forte brigado por tanto 🫶🏻
+          <br>
+
+Geovana minha noiva 👰 você também foi e é perca fundamental na junina pessoinha incrível eu bastante dedicada obrigado por aguentar o marcador aqui 2026 tá bem aí viu 🫶🏻
+</p>
+      </div>
+
+      <div class="bg-white/90 text-gray-800 rounded-xl overflow-hidden shadow-xl animate-fadeIn">
+        <div class="aspect-w-1 aspect-h-1">
+          <img src="Fotos pra projeto/rei_rainha.jpg" alt="Descrição" class="object-cover w-full h-full" />
+        </div>
+        <p class="p-3 text-center text-sm">Ruane nossa rainha 2025 fez um papel incrível na nação parabéns 🎉 obrigado por tanto e por tudo e espero que em 2026 seja um ano de muitas conquistas e realizações ❤🫶🏻 
+          <br>
+
+Matheus meu rei 👑 parabéns é o rei que tem mas postura nossa cara você é foda parabéns e obrigado por fazer parte da nação e 2026 tá nem aí pra tu me fazer raiva denovo kkk eita minino que faz raiva okkk mas tem o coração bom ❤ brigado por tudo.</p>
+      </div>
+
+<div class="bg-white/90 text-gray-800 rounded-xl overflow-hidden shadow-xl animate-fadeIn">
+        <div class="aspect-w-1 aspect-h-1">
+          <img src="Fotos pra projeto/maria_guilherme.jpg" alt="xaxado2" class="object-cover w-full h-full" />
+        </div>
+        <p class="p-3 text-center text-sm">Maria outra que deu trabalho , mas passando para lhe parabenizar dança muito e me surpreendeu em cada apresentação representou bem o xaxado da junina que 2026 seja uma temporada única 🫶🏻❤
+          <br>
+
+Guilherme parabéns pelo empenho na junina fez um papel incrível na junina ,teve apresentações que vc surpreendeu n só a minha quanto o público parabéns e 2026 tá bem aí em 🫶🏻🥰
+</p>
+      </div>
+
+      <div class="bg-white/90 text-gray-800 rounded-xl overflow-hidden shadow-xl animate-fadeIn">
+        <div class="aspect-w-1 aspect-h-1">
+          <img src="Fotos pra projeto/raynan_kauane.jpg" alt="xaxado" class="object-cover w-full h-full" />
+        </div>
+        <p class="p-3 text-center text-sm">O famoso cabeça dura assim que eu costumava chamar ele aliás ainda chamo , foram muitos altos e baixos brigas e discussões mas enfim venho aqui só pra lhe agradecer por ter feito um trabalho incrível na junina n finalizou as apresentações conosco mas fez um ótimo trabalho 👏 espero que tenha se divertido na junina 
+          <br>
+Kauane perigosa kkkk mas amo brigado coração por fazer parte da nação que o senho lhe abençoe e  juízo em aí tem pouco viu kkk 2026 tá bem aí 🫶🏻❤
+</p>
+      </div>
+
+      <div class="bg-white/90 text-gray-800 rounded-xl overflow-hidden shadow-xl animate-fadeIn">
+        <div class="aspect-w-1 aspect-h-1">
+          <img src="Fotos pra projeto/nayla_e_evandro.jpg" alt="primeiro_cavalheiro" class="object-cover w-full h-full" />
+        </div>
+        <p class="p-3 text-center text-sm">Ah meu os que botam pra quebrar 🫶🏻🥰 
+
+Meu parceiro e amigo evandro pense num doído topado kkkk ave Maria aqui deu trabalho nessa junina kkk mas em compensação ajudou d+ dança muito e 2026 vem novidades aí em kkkk eita evandro que o senhor lhe abençoe e que vc seja assim cara brincalhão ,humilde,um cara massa ,verdadeiro as vezes neh kkkk mas enfim uma pessoa ombro amigo de verdade brigado por tanto ❤🫶🏻
+<br>
+
+Náyla olha aí a bruta da junina kkk mas um coração enorme que ama o São João,ama dançar e eu tenho certeza que realizei seu sonho 🫶🏻🥰 brigado por fazer parte da junina eu tenho certeza que vc está conosco em 2026 eu acho que se tiver ensaio hj vc vai kkkk , iremos fazer uma temporada linda em 2026</p>
+      </div>
+
+      <div class="bg-white/90 text-gray-800 rounded-xl overflow-hidden shadow-xl animate-fadeIn">
+        <div class="aspect-w-1 aspect-h-1">
+          <img src="Fotos pra projeto/Antonio_e_merson.jpg" alt="Antonio" class="object-cover w-full h-full" />
+        </div>
+        <p class="p-3 text-center text-sm">Antonio 🫶🏻 chegou caladinho , tímido lembro de sua mãe me mandado mensagem “Emerson ajuda meu filho ele é muito tímido “ e hoje fala até d+ kkkk brigado por fazer parte da família RNJ eu sei o quão é importante pra você está dançando 🕺 amigo pra vida inteira 🫶🏻🥰
+</p>
+      </div>
+
+      <div class="bg-white/90 text-gray-800 rounded-xl overflow-hidden shadow-xl animate-fadeIn">
+        <div class="aspect-w-1 aspect-h-1">
+          <img src="Fotos pra projeto/lara_e_emerson.jpg" alt="Lara" class="object-cover w-full h-full" />
+        </div>
+        <p class="p-3 text-center text-sm">Hahaha Lara minha irmã 👩 ? Não , mas considero d+ te amo Lara infame kkkk nossa me deu trabalho d+ meu deus do céu foram 8 meses de muita dor de cabeça mas muito amor e orgulho por vc princesa 👸 será se vai ter SAMBA denovo ? Kkkkk 2026 tá bem aí 🫶🏻
+</p>
+      </div>
+
+      <div class="bg-white/90 text-gray-800 rounded-xl overflow-hidden shadow-xl animate-fadeIn">
+        <div class="aspect-w-1 aspect-h-1">
+          <img src="Fotos pra projeto/igor_e_tica.jpg" alt="igor_e_tica" class="object-cover w-full h-full" />
+        </div>
+        <p class="p-3 text-center text-sm">Igor me surpreendi com você nessa temporada 🫶🏻 parabéns pelo empenho e obrigado por tanto ajudou bastante na junina 🫶🏻❤ 
+          <br>
+Francisca (tica) me deu trabalho, mas brilhou muito e 2026 não será diferente , que 2026 possamos brincar novamente nos ensaios e espalhar alegria na junina a pequena gigante da junina 🫶🏻
+</p>
+      </div> 
+
+      <div class="bg-white/90 text-gray-800 rounded-xl overflow-hidden shadow-xl animate-fadeIn">
+        <div class="aspect-w-1 aspect-h-1">
+          <img src="Fotos pra projeto/Ravenna.jpg" alt="ravenna" class="object-cover w-full h-full" />
+        </div>
+        <p class="p-3 text-center text-sm">Ravena essa me deu um pouco de trabalho kkkk saiu voltou e era um fole mas no final deu tudo certo e espero que 2026 esteja com nós novamente ( Lady Gaga ) e assim que ela me chama kkkk brilhou muito nessa temporada 🫶🏻🥰
+</p>
+      </div>
+
+
+      <div class="bg-white/90 text-gray-800 rounded-xl overflow-hidden shadow-xl animate-fadeIn">
+        <div class="aspect-w-1 aspect-h-1">
+          <img src="Fotos pra projeto/bia2.jpg" alt="bia" class="object-cover w-full h-full" />
+        </div>
+        <p class="p-3 text-center text-sm">Bia pessoa tímida da junina brigado Princesa por chegar até o final com a junina que 2026 seja uma ótima temporada para nós beijo 😘 do seu Marcador
+</p>
+      </div>
+
+      <div class="bg-white/90 text-gray-800 rounded-xl overflow-hidden shadow-xl animate-fadeIn">
+        <div class="aspect-w-1 aspect-h-1">
+          <img src="Fotos pra projeto/Michelle.jpg" alt="michelle" class="object-cover w-full h-full" />
+        </div>
+        <p class="p-3 text-center text-sm">Michele kkkkk 🥺🥹❤ amo amo amo minha queridinha o povo zangava quando eu defendia tu kkk deu trabalho d+ ave Maria kkkk 🤪 mas no final deu tudo certo toda apresentação que íamos na hora que me via me dava um abraço 🫂 pessoinha do coração enorme que Deus abençoe sempre e 2026 vou bater cabeça contigo denovo kkk</p>
+      </div>
+
+      <div class="bg-white/90 text-gray-800 rounded-xl overflow-hidden shadow-xl animate-fadeIn">
+        <div class="aspect-w-1 aspect-h-1">
+          <img src="Fotos pra projeto/patricia.jpg" alt="patricia" class="object-cover w-full h-full" />
+        </div>
+        <p class="p-3 text-center text-sm">Patrícia amo ajudou d+ na junina criou coreografias foi peça fundamental na junina brigado coração por tudo e por tanto 2026 quero vc em na junina beijo do seu marcador 🥰🫶🏻
+</p>
+      </div>
+
+      <div class="bg-white/90 text-gray-800 rounded-xl overflow-hidden shadow-xl animate-fadeIn">
+        <div class="aspect-w-1 aspect-h-1">
+          <img src="Fotos pra projeto/laura.jpg" alt="laura" class="object-cover w-full h-full" />
+        </div>
+        <p class="p-3 text-center text-sm">Ah Laurinha 🥺🫶🏻 vc foi a cereja do bolo , pegou a coreografia da junina em menos de 1 mês fiquei tão feliz 🥰 em ver você dançando nossa foi a estrela da junina ,será se tem Laurinha na temporada 2026 ? Beijo Laura</p>
+      </div>
+
+      <div class="bg-white/90 text-gray-800 rounded-xl overflow-hidden shadow-xl animate-fadeIn">
+        <div class="aspect-w-1 aspect-h-1">
+          <img src="Fotos pra projeto/Eva.jpg" alt="eva" class="object-cover w-full h-full" />
+        </div>
+        <p class="p-3 text-center text-sm">Olha ela , muita criativa entrou também já no segundo tempo da junina e de cara já coloquei na minha direção brigado por fazer tanto pela junina que 2026 seja uma temporada incrível 😻 🫶🏻🥰
+.</p>
+      </div>
+
+      <div class="bg-white/90 text-gray-800 rounded-xl overflow-hidden shadow-xl animate-fadeIn">
+        <div class="aspect-w-1 aspect-h-1">
+          <img src="Fotos pra projeto/sofia.jpg" alt="sofia" class="object-cover w-full h-full" />
+        </div>
+        <p class="p-3 text-center text-sm">Sofia amor a chorona kkkk brigado amor 🥰 por ter chegado até o final conosco 2026 está chegando e conto com sua presença iremos fazer uma ótima temporada igual a que fizemos esse ano 🫶🏻🥰
+</p>
+      </div>
+
+      <div class="bg-white/90 text-gray-800 rounded-xl overflow-hidden shadow-xl animate-fadeIn">
+        <div class="aspect-w-1 aspect-h-1">
+          <img src="Fotos pra projeto/Nagila.jpg" alt="nagila" class="object-cover w-full h-full" />
+        </div>
+        <p class="p-3 text-center text-sm">Nagila a tímida , não deu trabalho em nada graças a Deus só chegava um pouco atrasada nos ensaio mas deu tudo certo , obrigado princesa por fazer parte da nação 🫶🏻❤
+</p>
+      </div>
+
+      <div class="bg-white/90 text-gray-800 rounded-xl overflow-hidden shadow-xl animate-fadeIn">
+        <div class="aspect-w-1 aspect-h-1">
+          <img src="Fotos pra projeto/produção_marcador.jpg" alt="produção" class="object-cover w-full h-full" />
+        </div>
+        <p class="p-3 text-center text-sm">Ah minha produção o que falar de vcs ? Vamos lá neh ? 
+          <br>
+
+Witallo além de ser nosso câmera 🎥 ajuda na logística da junina e meu amigo de confiança 🫶🏻 obrigado por tanto e por ajudar a junina crescer tanto 🫶🏻 você é peça fundamental na minha não só na junina tanto quanto para mim e você sabe disso 🫶🏻
+<br>
+Sandrinha kkk eita Sandra obrigado por tudo por abraçar a junina de coração aberto sem ganhar nada em troca iremos ser grato por resto da vida , pessoas assim igual vc merece tudo de bom na vida e Deus abençoe sempre sua caminha mulher admirável em todos os sentidos 🫶🏻❤
+<br>
+Jamilson o cara do São João da Barra kkkk brigado cara por nos ajudar tanto vc não tem noção d força que vc é que Deus abençoe e 2026 ta bem ai em 🫶🏻🤣👀
+</p>
+      </div>
+
+      <div class="bg-white/90 text-gray-800 rounded-xl overflow-hidden shadow-xl animate-fadeIn">
+        <div class="aspect-w-1 aspect-h-1">
+          <img src="Fotos pra projeto/valdete.jpg" alt="nagila" class="object-cover w-full h-full" />
+        </div>
+        <p class="p-3 text-center text-sm">Olha aí os papais coruja 🦉 também kkk quando não ia um ia o outro e as vezes os dois juntos Valdete passando pra agradecer de coração o apoio e ajuda na junina e respeite que ela agora faz parte da DIRETORIA DA JUNINA ❤🫶🏻🥹
+
+</p>
+
+    <div class="bg-white/90 text-gray-800 rounded-xl overflow-hidden shadow-xl animate-fadeIn">
+        <div class="aspect-w-1 aspect-h-1">
+          <img src="Fotos pra projeto/dona elany.jpg" alt="nagila" class="object-cover w-full h-full" />
+        </div>
+        <p class="p-3 text-center text-sm">Olha ela dona Elane ,Eduardo pergunta o Emerson se tem vaga pra mim kkkk 🤪 claro que tem dona Elane uma de nossas patrocinadoras viu forte 👀🥹❤ que 2026 seja abençoado pra todos nós ❤
+</p>
+
+    <div class="bg-white/90 text-gray-800 rounded-xl overflow-hidden shadow-xl animate-fadeIn">
+        <div class="aspect-w-1 aspect-h-1">
+          <img src="Fotos pra projeto/jucy.jpg" alt="nagila" class="object-cover w-full h-full" />
+        </div>
+        <p class="p-3 text-center text-sm">Nossa amiga Jucy sempre acompanhando nas apresentações 🫶🏻❤ es aquele ditado o que a mãe não faz por um filho ,juh meu amor lhe admiro muito e vc sabe disso vc é explo de mãe , amiga ,parceira que a vida me Deus que Deus nos abençoe pro resto da vida ❤🙌🥹
+</p>
+
+    <div class="bg-white/90 text-gray-800 rounded-xl overflow-hidden shadow-xl animate-fadeIn">
+        <div class="aspect-w-1 aspect-h-1">
+          <img src="Fotos pra projeto/nonatinho.jpg" alt="nagila" class="object-cover w-full h-full" />
+        </div>
+        <p class="p-3 text-center text-sm">Nosso padrinho oficial que não soltou as mãos da juninas cara o que dizer de vc , só peço que o senhor Jesus multiplique em sua vida tudo de bom e que vc possa realizar todos os seus sonhos e objetivos estamos juntos em 2026
+</p>
+      
+      <!-- COPIE E COLE AS DIVS ACIMA PARA ADICIONAR MAIS FOTOS -->
+      <!-- Mude apenas o caminho da imagem e o texto -->
+    </main>
+
+    <!-- MENSAGEM FINAL -->
+    <div class="text-center text-white text-lg font-semibold mb-10 px-4 animate-fadeIn">
+      <p>Encerramos nossas apresentações junina com uma dor no coração ,com gosto de quero mas ,por que não pode dançar o ano todo ? <br>Essa é a pergunta que todos fazem e n sabemos responder,enfim meus agradecimentos a todo equipe , a cada componente
+tudo foi maravilhoso e agradeço aos que não chegaram até o final ,a final de contas vcs foram importantes também na família nação ,cada componente tem um significado pra mim ,vcs realizaram meu sonho 💭 eu sou grato de verdade e claro não foi fácil foi uma experiência incrível e desafiadora Brigas ,discursões, fofocas  😅,desunião,união ,amor ,obstáculo etc mas tudo  se saiu como  planejado quem me conhece sabe o quão eu desejava ter essa junina figurino perfeito , as coreografias ,musicas ,vinheta ,grito gente tudo maravilhoso 🥺🥹  2026 está bem aí e conto com todos novamente será uma ótima temporada <br>
+<br>
+
+Antecesiosamente ; Emerson Lima</p>
+
+
+Até mais pessoal !!
+<br>
+
+O figurino foi guardado, o glitter voltou pra gaveta, não tem mais ensaio, não tem mais ponto de encontro, nem o coração apertado a espera de um resultado. Agora, só nos
+"
+resta esperar o próximo
+São João®
+    </div>
+
+    <!-- VÍDEO VERTICAL (FULL-WIDTH) -->
+    <div class="flex justify-center mb-10 px-4 animate-fadeIn">
+      <div class="w-full max-w-sm">
+        <video controls playsinline class="rounded-xl shadow-2xl w-full h-auto">
+          <source src="Fotos pra projeto/video .mp4" type="video/mp4">
+          Seu navegador não suporta a tag de vídeo.
+        </video>
+      </div>
+    </div>
+
+    <!-- Botão de Compartilhar -->
+    <div class="flex justify-center mb-10 animate-fadeIn">
+      <button onclick="compartilhar()" class="bg-pink-600 hover:bg-pink-700 text-white font-bold py-2 px-6 rounded-full shadow-md transition-transform hover:scale-105">
+        Compartilhar esta lembrança 💌
+      </button>
+    </div>
+
+    <footer class="relative text-center pb-8 text-white font-medium">
+      &copy; 2025 - Feito com muito ❤
+      <div id="footer-hearts-container"></div>
+    </footer>
+
+    <script>
+      const startDate = new Date("2025-01-05T00:00:00");
+      const timerElement = document.getElementById("timer");
+      function updateTimer() {
+        const now = new Date();
+        const diff = now - startDate;
+        const totalDays = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const months = Math.floor(totalDays / 30);
+        const days = totalDays % 30;
+        const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+        const minutes = Math.floor((diff / (1000 * 60)) % 60);
+        const seconds = Math.floor((diff / 1000) % 60);
+        timerElement.textContent = `${months} meses, ${days} dias, ${hours}h ${minutes}m ${seconds}s 💖`;
+      }
+      setInterval(updateTimer, 1000);
+      updateTimer();
+
+      const footerHeartsContainer = document.getElementById('footer-hearts-container');
+      function createFooterHeart() {
+        const heart = document.createElement('div');
+        heart.classList.add('footer-heart');
+        heart.style.left = Math.random() * 100 + '%';
+        heart.style.animationDuration = (3 + Math.random() * 4) + 's';
+        footerHeartsContainer.appendChild(heart);
+        setTimeout(() => heart.remove(), 7000);
+      }
+      setInterval(createFooterHeart, 500);
+
+      function compartilhar() {
+        if (navigator.share) {
+          navigator.share({
+            title: 'Raizes da nação 💞',
+            text: 'Confira esta linda homenagem de despedida!',
+            url: window.location.href
+          }).catch(console.error);
+        } else {
+          alert('Recurso de compartilhamento não suportado neste dispositivo.');
+        }
+      }
+    </script>
+  </body>
+</html>
